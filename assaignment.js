@@ -1,8 +1,8 @@
 function feetToMile(mile){
-    var feet = 5280 * mile ; 
+    var feet =   mile / 5280; 
     return feet ;
 }
-// console.log(feetToMile(5));
+// console.log(feetToMile(10560));
 
 //  woodCalculator start here
 function woodCalculator(ch,tb,bd){
@@ -24,18 +24,22 @@ var firstFloor, secondFloor, thirdFloor
 
 if(n <= 10){
 
-  return firstFloor = 1500 * n;
+  return firstFloor = 15000 * n ;
 
 }else if(n >= 11 && n <= 20 ){
 
-    return secondFloor = 1200 * n;
+    return secondFloor =  12000 * n ;
 
 }else{
-    return thirdFloor = 1000 * n;
+    return thirdFloor =  n * 10000 ;
 }
 }
 
-// console.log(brickCalculator(7));
+// console.log(brickCalculator(10));
+
+
+
+
 
 
 // tinyFriend start here
@@ -53,6 +57,6 @@ function tinyFriend(numbers){
 return tiny;
 }
 
-var friendsList = ['Hellel', 'bashir', 'ab', 'monu', 'abc'];
+var friendsList = ['Hellel', 'bashir', 'a', 'monu', 'abc'];
 
 // console.log(tinyFriend(friendsList));
